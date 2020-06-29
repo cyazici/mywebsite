@@ -60,25 +60,44 @@ class ApanelController extends Controller
 
 
             public function hakkimda(){
-                $abouts=DB::table('abouts')->get();
+                $about=DB::table('abouts')->get();
+                if(count($about) <= 0) {
+                    $about = new abouts;
+                } else {
+                    $about = $about[0];
+                }
 
-
-                return view('hakkimda',compact('abouts'));
+                return view('hakkimda',compact('about'));
             }
 
             public function hakkimdaguncelle(){
 
-                $abouts=DB::table('abouts')->where ('id','2')->update(
-                    [
+        if(\request('about_id') == '') {
+            $abouts=abouts::create(
+                [
                     'name'=>\request('name'),
                     'phone'=>\request('phone'),
-                      'email'=>\request('email'),
-                        'adres'=>\request('adres'),
-                        'about'=>\request('about'),
-                        'Hschool'=>\request('Hscholl'),
-                        'uni'=>\request('uni'),
-                    ]
-                );
+                    'email'=>\request('email'),
+                    'adres'=>\request('adres'),
+                    'about'=>\request('about'),
+                    'Hschool'=>\request('Hscholl'),
+                    'uni'=>\request('uni'),
+                ]
+            );
+        } else {
+            $abouts=abouts::where('id', request('about_id'))->update(
+                [
+                    'name'=>\request('name'),
+                    'phone'=>\request('phone'),
+                    'email'=>\request('email'),
+                    'adres'=>\request('adres'),
+                    'about'=>\request('about'),
+                    'Hschool'=>\request('Hscholl'),
+                    'uni'=>\request('uni'),
+                ]
+            );
+        }
+
                 return redirect()->intended(route('hakkimda.show'));
         }
 
