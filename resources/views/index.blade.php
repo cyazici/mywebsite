@@ -1,8 +1,9 @@
 @extends('template')
 @section('AdminPanelErişimLinki')
-    @if(auth()->user()->yetki=='1')
+    @if(auth()->user()->yetki=='1'  )
         <li>  <a href="PanelHome">Yönetim Paneli</a></li>
     @endif
+
 @endsection
 @section('icerik')
    {{-- <div class="wrapper row3">

@@ -22,14 +22,13 @@ class KullaniciController extends Controller
     }
     public function kayit(Request $request){
 
-
         $user =new User;
         $user->name=request('name');
         $user->email=request('email');
         $user->password=bcrypt(request('password'));
         $user->yetki='2';
         $user->save();
-        return redirect()->intended(route('index'));
+        return redirect()->intended(route('login.show'));
                    /* return view('register');*/
 
     }
