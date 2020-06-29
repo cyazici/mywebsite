@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function() {
+    return redirect('login');
+});
 
 //Route::group(['middleware'=>['A']],function() {
 Route::get('index','SiteController@index')->name('index');
