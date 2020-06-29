@@ -4,6 +4,7 @@
 @section('icerik')
     @foreach($news as $new)
         @endforeach
+
     @foreach($abouts as $about)
     @endforeach
 

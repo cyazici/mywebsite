@@ -19,6 +19,7 @@ class SiteController extends Controller
         $abouts=abouts::all();
         $news=news::all();
         return view('about',compact('abouts','news'));
+
     }
 
     public function uyeiletisim(){
