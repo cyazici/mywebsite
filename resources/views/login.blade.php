@@ -90,7 +90,7 @@
                         </div>
                     </div>
                     <div class="form-footer text-center mt-5">
-                        <p class="text-muted">Hesabın yok mu? <a href="register">Kayıt Ol</a></p>
+                        <p class="text-muted">Hesabın yok mu? <a href="kayit">Kayıt Ol</a></p>
                     </div>
                 </div>
             </form>
