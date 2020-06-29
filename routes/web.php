@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//
 //Route::group(['middleware'=>['A']],function() {
 Route::get('index','SiteController@index')->name('index');
 Route::get('about','SiteController@about')->name('about.show');
