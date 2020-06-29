@@ -15,6 +15,7 @@ class SiteController extends Controller
 
       return view('index',compact('news'));
     }
+
     public function about(){
         $abouts=abouts::all();
         $news=news::all();
