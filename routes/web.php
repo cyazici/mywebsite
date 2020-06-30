@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 //
 //Route::group(['middleware'=>['A']],function() {
+Route::get('/','SiteController@login')->name('login.s');
 Route::get('index','SiteController@index')->name('index');
 Route::get('about','SiteController@about')->name('about.show');
 Route::get('uyeiletisim','SiteController@uyeiletisim')->name('uyeiletisim.show');
