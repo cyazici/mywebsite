@@ -24,7 +24,7 @@
             <td>{{$new->writer}}</td>
             <td>{{$new->created_at}}</td>
 
-            <td><a class="btn btn-primary" href="#" role="button">Düzenle</a>
+            <td>
                 <a class="btn btn-danger" href="#" role="button">Sil</a></td>
 
             <?php $i++;?>

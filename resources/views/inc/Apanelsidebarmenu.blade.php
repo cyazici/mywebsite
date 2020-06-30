@@ -1,7 +1,7 @@
 <div class="sidebar-menu">
     <div class="sidebar-header">
         <div class="logo">
-            <a href="PanelHome"><img src="{{asset('admin-temp')}}/assets/images/icon/logo.png" alt="logo"></a>
+            <a href="PanelHome">{{--<img src="{{asset('admin-temp')}}/assets/images/icon/logo.png" alt="logo">--}}Cüneyt Yazıcı</a>
         </div>
     </div>
     <div class="main-menu">
