@@ -18,7 +18,7 @@ class ApanelController extends Controller
         public function haberekle(){
         return view('haberekle');
     }
-
+    //
       public function haberkayit(){
         $news =new news();
         $news->title=request('title');
