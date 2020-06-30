@@ -56,6 +56,10 @@ class ApanelController extends Controller
                 $user=DB::table('users')->where('id',$id)->delete();
                 return redirect()->intended(route('users.show'));
             }
+          public function habersil($id){
+              $user=DB::table('news')->where('id',$id)->delete();
+              return redirect()->intended(route('Panel.show'));
+         }
 
 
 

@@ -25,7 +25,7 @@
             <td>{{$new->created_at}}</td>
 
             <td>
-                <a class="btn btn-danger" href="#" role="button">Sil</a></td>
+                <a class="btn btn-danger" href="{{route('haber-sil',$new->id)}}" role="button">Sil</a></td>
 
             <?php $i++;?>
         </tr>

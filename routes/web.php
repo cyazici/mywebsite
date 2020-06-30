@@ -48,6 +48,7 @@ Route::post('aboutupdate','ApanelController@hakkimdaguncelle')->name('aboutupdat
 Route::post('kayit-et','KullaniciController@kayit')->name('kayit-et');
 Route::post('giris-yap','KullaniciController@Giris')->name('giris-yap');
 
+Route::get('haber-sil/{id}','ApanelController@habersil')->name('haber-sil');
 
 //--------------
 
