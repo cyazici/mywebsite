@@ -10,6 +10,10 @@ use App\User;
 
 class SiteController extends Controller
 {
+    public function login(){
+
+        return view('login');
+    }
     public function index(){
         $news=news::all();
 
